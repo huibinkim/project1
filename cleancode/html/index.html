@@ -67,58 +67,66 @@
       <!--// header -->
 
       <!-- content -->
-      <nav id="navWrap">
-        <div class="nav"> 
-            <div class="swiper slide-banner">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../images/main/img_banner01.png" alt="">
-                    </div>
+      <div id="containerWrap">
+        <div class="container">
 
-                    <div class="swiper-slide">
-                        <img src="../images/main/img_banner01.png" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="../images/main/img_banner01.png" alt="">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="../images/main/img_banner01.png" alt="">
-                    </div>
+          <div class="swiper slide-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/main/img_banner01.png" alt="">
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
+                    <img src="../images/main/img_banner01.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../images/main/img_banner01.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../images/main/img_banner01.png" alt="">
+                </div>
             </div>
 
-            <div class="main-con">
-              <div class="side-nav">
-                  <div class="title">
-                    <p class="tit">SiDEBAR NAVIGATION MENU</p> 
-                  </div>
-                  <ul>
-                    <li><a href="javascript:;">SIDEBAR MENU 01</a></li>
-                    <li><a href="javascript:;">SIDEBAR MENU 02</a></li>
-                    <li><a href="javascript:;">SIDEBAR MENU 03</a></li>
-                    <li><a href="javascript:;">SIDEBAR MENU 04</a> 
-                      <ul class="nav-sub-menu">
-                        <li><a href="javascript:;">Sidebar sub menu 01</a></li>
-                        <li><a href="javascript:;">Sidebar sub menu 02</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="javascript:;">SIDEBAR MENU 05</a></li>
-                    <li><a href="javascript:;">SIDEBAR MENU 06</a></li>
-                    <li><a href="javascript:;">SIDEBAR MENU 07</a></li>
-                  </ul>
-              </div>
-
-              <div class="side-con">
-
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
-      </nav>
-      <!--// content -->
+
+          <nav id="navWrap">
+            <div class="nav"> 
+                <div class="main-con">
+                  <div class="side-nav">
+                      <div class="title">
+                        <p class="tit">SiDEBAR NAVIGATION MENU</p> 
+                      </div>
+                      <ul>
+                        <li><a href="javascript:;">SIDEBAR MENU 01</a></li>
+                        <li><a href="javascript:;">SIDEBAR MENU 02</a></li>
+                        <li><a href="javascript:;">SIDEBAR MENU 03</a></li>
+                        <li><a href="javascript:;">SIDEBAR MENU 04</a> 
+                          <ul class="nav-sub-menu">
+                            <li><a href="javascript:;">Sidebar sub menu 01</a></li>
+                            <li><a href="javascript:;">Sidebar sub menu 02</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="javascript:;">SIDEBAR MENU 05</a></li>
+                        <li><a href="javascript:;">SIDEBAR MENU 06</a></li>
+                        <li><a href="javascript:;">SIDEBAR MENU 07</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="side-con">
+    
+                  </div>
+                </div>
+                
+            </div>
+          </nav>
+        </div>
+      </div>
+   
+     <!-- content -->
+
 
       <!-- footer -->
       <footer class="footer">
@@ -211,16 +219,6 @@
           el: '.swiper-pagination',
         },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
     });
 
     const swiper02 = new Swiper('.swiper02', {
