@@ -1,0 +1,46 @@
+/* header gnb*/
+#headerWrap { width:100%; }
+#headerWrap .header { display:flex; justify-content:space-between; align-items:center; padding:8px 72px; height:64px; box-shadow:0 4px 8px rgba(0,0,0,0.08); }
+.header .h-logo{ width:104px; }
+.header .h-logo h1 { position:absolute; top:0; opacity:0; }
+.header .h-logo img { width: fit-content; height:50px; }
+
+.header .h-gnb ul { display:flex; gap:24px; }
+.header .h-gnb ul li a{ display:inline-block; padding:15px 8px; }
+.header .h-gnb ul li a:hover{ color:#0066CC; }
+.header .h-login button { padding:12px 16px; color:#0066CC; border:2px solid #0066CC; border-radius:2px; background:none; }
+
+/* nav sidebar */
+.main-con { display:flex; justify-content:space-between; padding:48px 72px 80px; background:#FAFAFA; }
+.main-con > div { background:#Fff; box-shadow:0px 2px 4px rgba(0, 0, 0, 0.08); }
+.main-con .side-nav { position:relative; }
+.main-con .side-nav .title { border-bottom:1px solid #e5e5e5; }
+.main-con .side-nav .title p{ padding: 20px 72px 20px 96px; background:url(../../images/icon/ico_menu.png) no-repeat 40px center/32px; }
+.tit { font-size:14px; font-weight:500; }
+.main-con .side-nav > ul { padding:15px 8px; }
+.main-con .side-nav > ul > li {  background:#FAFAFA; }
+.main-con .side-nav > ul > li > a { display:block; padding:20px 200px 20px 32px;  }
+.main-con .side-nav .nav-sub-menu{ display:none; margin:0 32px; background:#fff; }
+.main-con .side-nav .nav-sub-menu li > a{ display:block; }
+.main-con .side-nav .nav-sub-menu li > a:nth-child(1){ padding:16px 0 16px 48px; }
+.main-con .side-con { width:calc(100% - 390px); }
+
+/* footer */
+.footer { overflow:hidden;  background:#eeecec; }
+.footer .f-con { display:flex; justify-content: space-around; padding:48px 72px 28px; }
+.footer .f-con .card-wrap { width:calc((100% / 4) - 30px );  overflow:hidden; }
+.footer .card-wrap .tit { padding-bottom:15px; }
+.footer .card-wrap .card { padding:15px 0px; }
+
+.footer .f-bottom { display:flex; justify-content:space-between; align-items:center; padding:16px 72px; background:#fff; color:#505050; }
+.f-bottom .sns { display:flex; background:url(../../images/icon/ico_Facebook.png) no-repeat 0px 0px/contain, url(../../images/icon/ico_Twitter.png) no-repeat 40px 0px/contain, url(../../images/icon/ico_Instagram.png) no-repeat 80px 0px/contain; }
+.f-bottom .sns p { opacity:0; }
+/* .f-bottom .sns p:nth-of-type(1)::after { display:block; width:32px; height:32px;  background:url(../../images/icon/ico_Facebook.png) no-repeat ;}
+.f-bottom .sns p:nth-of-type(2) { background:url(../../images/icon/ico_Twitter.png) no-repeat ;}
+.f-bottom .sns p:nth-of-type(3) { background:url(../../images/icon/ico_Instagram.png) no-repeat ;} */
+
+/* swiper design */
+.swiper { width:100%; height:auto; }
+.swiper-slide { text-align:left; }
+.swiper02 { position:relative; width:calc(100%/4); }
+.swiper02 .swiper-pagination02 { position:absolute; top:30px !important; }
