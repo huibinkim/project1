@@ -23,7 +23,7 @@
 .nav .side-nav > ul > li:hover > a { color:#0066CC; }
 .nav .side-nav > ul > li.on > .nav-sub-menu { display:block; }
 .nav .side-nav > ul > li > a { display:block; padding:20px 200px 20px 32px;  }
-.nav-sub-menu { display:none; margin:0 32px; background:#fff; transition:2s ease-out; }
+.nav-sub-menu { display:none; margin:0 32px; background:#fff; transition:2s; }
 .active { display:block !important; }
 .nav .side-nav .nav-sub-menu li > a { display:block; }
 .nav .side-nav .nav-sub-menu li > a:nth-child(1) { padding:16px 0 16px 48px; }

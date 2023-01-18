@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../lib/css/common.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
   />
+  <script src="../lib/js/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="../lib/js/ui.js"></script>
   <title>Make clean codes</title>
@@ -104,7 +105,12 @@
                       <ul>
                         <li><a href="javascript:;">SIDEBAR MENU 01</a></li>
                         <li><a href="javascript:;">SIDEBAR MENU 02</a></li>
-                        <li><a href="javascript:;">SIDEBAR MENU 03</a></li>
+                        <li class="sub-menu"><a href="javascript:;">SIDEBAR MENU 03</a>
+                          <ul class="nav-sub-menu">
+                            <li><a href="javascript:;">Sidebar sub menu 01</a></li>
+                            <li><a href="javascript:;">Sidebar sub menu 02</a></li>
+                         </ul>
+                        </li>
                         <li class="sub-menu">
                           <a href="javascript:;">SIDEBAR MENU 04</a> 
                           <ul class="nav-sub-menu">
@@ -200,8 +206,7 @@
               </div>
           </div>
       </footer>
-      <!--// footer -->
-      
+      <!--// footer -->      
   </div>
 
   <script>
@@ -240,13 +245,32 @@
 
     });
 
-    const sideBar = document.querySelector('.sub-menu');
-    const sideMenu = document.querySelector('.sub-menu>a + ul');
-    console.log(sideBar);
-    console.log(sideMenu);
-    sideBar.click(function(){
-      sideMenu.toggleClass('active');      
-    });
+    $(document).ready(function(){
+        $('.sub-menu').click(function(){
+        $(this).children('ul').toggle('active');
+        
+      })
+    })
+
+    // var acc = document.getElementsByClassName("sub-menu"); //아코디언클래스리스트를 가져온다.
+		// var i;
+		
+		// for (i = 0; i < acc.length; i++) {
+		//   acc[i].addEventListener("click", function() { //클릭이벤트를 추가한다. 
+		//     /* Toggle between adding and removing the "active" class,
+		//     to highlight the button that controls the panel */
+		//     this.children().classList.toggle("active"); //클래스를 추가하거나 삭제함. 
+		
+		//     /* Toggle between hiding and showing the active panel */
+		//     var panel = this.nextElementSibling; //현재 아코디언의 다음노트를 가져온다. panel이 옴 
+		//     if (panel.style.display === "block") { //출력모드가 블럭인지 none인지 체크한다.
+		//       panel.style.display = "none";
+		//     } else {
+		//       panel.style.display = "block";
+		//     }
+		//   });
+		// }
+    
 
   </script> 
 </body>
