@@ -1,6 +1,7 @@
 /* mobile css */
 .active { display:block; }
 .show { right:0 !important; }
+
 @media screen and (max-width:769px){
   #headerWrap .header { position:relative; height:56px; padding:8px 40px; }
   #headerWrap .header .h-gnb ul{ display:none; }
@@ -8,13 +9,14 @@
   .header .h-login button { display:none; }
   .header .h-login .menu-btn{ display:block; }
 
-  #containerWrap .container { padding-bottom:54px; }
   #navWrap .nav { height:100vh; position:fixed; top:0; right:-100%;  margin:0; z-index:10; transition: 1s; }
   .nav .side-nav .title { padding:20px; }
   .nav .side-nav .title .close-btn { display:block; background:url(../../images/icon/ico_closebtn.png) no-repeat 100% center/24px; }
   .nav .side-nav .title p { display:none; }
-  .container .side-con { width: calc(100% - 80px); height: 300px; margin-left:40px; }
+  .nav .side-nav > ul .sub-menu { background:url(../../images/icon/ico_plus.png) no-repeat 342px center/12px #FAFAFA; }
 
+  #containerWrap .container { padding-bottom:54px; }
+  .container .side-con { width: calc(100% - 80px); height: 300px; margin-left:40px; }
 
   .footer .f-con { justify-content:space-between; flex-wrap:wrap; padding:20px 40px; }
   .footer .f-con .card-wrap { width:calc((100% / 4) - 20px); }
