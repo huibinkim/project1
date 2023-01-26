@@ -6,15 +6,15 @@ $(document).ready(function(){
   
   // gnb 메뉴 아이콘 클릭시, menu active & dim 처리
   $('.menu-btn').on('click', function(){
-    $('.nav').addClass('active');
+    $('.nav').addClass('show');
     $('.gnb-overlay').addClass('active');
   });
   $('.close-btn').on('click', function(){
-    $('.nav').removeClass('active');
+    $('.nav').removeClass('show');
     $('.gnb-overlay').removeClass('active');
   })
   $('.gnb-overlay').on('click', function(){
-      $('.nav').removeClass('active');
+      $('.nav').removeClass('show');
       $('.gnb-overlay').removeClass('active');
     })
 })

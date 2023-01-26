@@ -1,5 +1,6 @@
 /* mobile css */
 .active { display:block; }
+.show { right:0 !important; }
 @media screen and (max-width:769px){
   #headerWrap .header { position:relative; height:56px; padding:8px 40px; }
   #headerWrap .header .h-gnb ul{ display:none; }
@@ -7,9 +8,8 @@
   .header .h-login button { display:none; }
   .header .h-login .menu-btn{ display:block; }
 
-  
   #containerWrap .container { padding-bottom:54px; }
-  #navWrap .nav { display:none; height:100vh; position:absolute; top:0; right:0; margin:0; z-index:10; }
+  #navWrap .nav { height:100vh; position:fixed; top:0; right:-100%;  margin:0; z-index:10; transition: 1s; }
   .nav .side-nav .title { padding:20px; }
   .nav .side-nav .title .close-btn { display:block; background:url(../../images/icon/ico_closebtn.png) no-repeat 100% center/24px; }
   .nav .side-nav .title p { display:none; }
