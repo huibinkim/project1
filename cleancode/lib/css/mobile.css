@@ -1,0 +1,17 @@
+/* mobile css */
+
+@media screen and (max-width:769px){
+  #headerWrap .header { position:relative; height:56px; padding:8px 40px; }
+  #headerWrap .header .h-gnb ul{ display:none; }
+  .header .h-logo img { height: 42px; }
+  .header .h-login button { display:none; }
+  .header .h-login { width:24px; height:20px; background:url(../../images/icon/ico_menu_btn.png) no-repeat right/contain; }
+
+  .dim { background:rgba(0, 89, 171, 0.16); width:100%; height:100%; }
+  #containerWrap .container { padding-bottom:48px; }
+  #navWrap .nav { display:none; height:100%; position:absolute; top:0; right:0; margin:0; z-index:9; }
+  .container .side-con { width: calc(100% - 80px); height: 300px; margin-left:40px; }
+
+
+  .footer .f-con { justify-content:space-between; padding:40px; }
+}
