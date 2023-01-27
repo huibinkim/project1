@@ -22,11 +22,10 @@
 }
 
 @media screen and (max-width:480px){
-
   #navWrap .nav { width:90%; }
   .nav .side-nav > ul > li > a { padding:20px 100px 20px 32px; } 
+
   .footer .f-con .card-wrap { width:100%; }
   .footer .f-bottom { justify-content:start; padding:16px 32px; }
   .f-bottom .sns { background:url(../../images/icon/ico_Facebook.png) no-repeat 60px 0px/contain, url(../../images/icon/ico_Twitter.png) no-repeat 100px 0px/contain, url(../../images/icon/ico_Instagram.png) no-repeat 140px 0px/contain; }
-
 }
