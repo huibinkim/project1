@@ -13,7 +13,7 @@
   .nav .side-nav .title { padding:20px; }
   .nav .side-nav .title .close-btn { display:block; background:url(../../images/icon/ico_closebtn.png) no-repeat 100% center/24px; }
   .nav .side-nav .title p { display:none; }
-  .nav .side-nav > ul .sub-menu { background:url(../../images/icon/ico_plus.png) no-repeat 342px center/12px #FAFAFA; }
+  /* .nav .side-nav > ul .sub-menu { background:url(../../images/icon/ico_plus.png) no-repeat 342px center/12px #FAFAFA; } */
 
   #containerWrap .container { padding-bottom:54px; }
   .container .side-con { width:calc(100% - 80px); height:300px; margin-left:40px; }
