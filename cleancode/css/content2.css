@@ -1,0 +1,48 @@
+body {
+  height: 100%;
+}
+h1 {
+  padding: 50px;
+  margin: 150px 0 0 0;
+  font-size: 14px;
+  text-align: center;
+}
+/* 별점 css */
+.star-wrap {
+  width: 100%;
+}
+.star-con {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  direction: rtl;
+}
+
+.star-con li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/icon_star_off.svg) no-repeat center/contain;
+  cursor: pointer;
+}
+/* .star-wrap input[type="radio"] + label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/icon_star_off.svg) no-repeat center/contain;
+  cursor: pointer;
+} */
+/* .star-wrap input[type="radio"]:checked ~ label {
+  background: url(../img/icon_star.svg) no-repeat center/contain;
+} */
+.star-con input[type="radio"] {
+  display: none;
+}
+.btn-on {
+  background: url(../img/icon_star.svg) no-repeat center/contain;
+}
+
+.blind {
+  display: none;
+}
